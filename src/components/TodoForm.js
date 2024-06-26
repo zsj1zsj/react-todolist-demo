@@ -5,7 +5,7 @@ import { addTodo } from '../actions/todoActions';
 const TodoForm = () => {
   const [text, setText] = useState('');
   const dispatch = useDispatch();
-  const visible = useSelector(state=>state.form.visible);
+  const visible = useSelector(state => state.form.visible);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,7 +16,7 @@ const TodoForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{visibility:visible}}>
+    <form onSubmit={handleSubmit} style={{ visibility: visible }}>
       <input
         type="text"
         value={text}

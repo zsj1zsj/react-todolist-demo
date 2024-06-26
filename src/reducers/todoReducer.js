@@ -20,7 +20,8 @@ const todoReducer = (state = initialState, action) => {
           {
             id: state.todos.length + 1,
             text: action.payload.text,
-            completed: false
+            completed: false,
+            created: Date.now()
           }
         ],
         sortby: state.sortby

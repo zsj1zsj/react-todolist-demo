@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import rootReducer from './reducers';
 import App from './pages/App';
-import Tools from './Tools';
+import Tools from './pages/Tools';
 
 const store = createStore(rootReducer);
 

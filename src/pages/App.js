@@ -3,6 +3,7 @@ import TodoForm from '../components/TodoForm';
 import TodoList from '../components/TodoList';
 import NewButton from '../components/NewButton';
 import SortLink from '../components/SortLink';
+import Gemini from '../components/Gemini';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <SortLink />
       <TodoForm />
       <TodoList />
+      <Gemini />
     </div>
   );
 }
